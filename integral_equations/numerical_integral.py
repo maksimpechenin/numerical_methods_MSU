@@ -119,12 +119,7 @@ def main(number):
         return make_Un(x, U_1, s_1, h_1)
 
     i = 0
-    tmp = math.sqrt(adaptive(Un, Un_1))
     while math.sqrt(adaptive(Un, Un_1)) >= eps:
-        print(Un(1))
-        print(Un_1(1))
-        print(math.sqrt(adaptive(Un, Un_1)), tmp/math.sqrt(adaptive(Un, Un_1)))
-        tmp = math.sqrt(adaptive(Un, Un_1))
         print(i)
         i += 1
         N, H, S = n_1, h_1, s_1
